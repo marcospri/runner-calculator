@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Runner Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+        table {
+            line-height: 0.7;
+            margin-top: 1.5rem;
+        }
+        .one-line-form > label{
+            padding-top: .375em;
+            margin-right: 10px;
+
+        }
+        .secondary {
+            font-weight: 100;
+            margin-left: 5px;
+
+        }
+
+        body {
+            background-image: url(images/bg.jpeg);
+        	background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            z-index: -2;
+        }
+    </style>
+    <script src="elm.js"></script>
+  </head>
+  <body>
+    <section class="section">
+        <div class="container">
+            <div id="app"></div>
+        </div>
+    </section>
+    <script>
+      Elm.Main.init({node: document.getElementById("app")});
+    </script>
+  </body>
+</html>
+</html>
