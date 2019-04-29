@@ -290,7 +290,7 @@ renderDesiredFinishTimeForm model =
         , div [ class "control" ]
             [ div [ class "select is-fullwidth" ] [ renderOnChangeSelect (List.range 0 59 |> List.map (\x -> option [] [ text (String.fromInt x) ])) ChangeFinishTimeSeconds ]
             ]
-        , label [ class "label secondary" ] [ text "minutes" ]
+        , label [ class "label secondary" ] [ text "seconds" ]
         , renderDesiredFinishTimeFormButton model
         ]
 
